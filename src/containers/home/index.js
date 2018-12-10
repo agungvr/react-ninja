@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { withRouter } from 'react-router-dom';
 import { compose, lifecycle } from 'recompose';
 import { connect } from 'react-redux';
 import { loginRequest } from "../../redux/actions/login";
-import { Container } from "./container";
+
+const Container = lazy(() => import('./container'));
 
 const withConnect = connect(
   state => ({

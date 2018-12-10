@@ -2,7 +2,6 @@ import { takeLatest } from 'redux-saga/effects';
 import { LOGIN_SUCCESS } from "../../actions/login";
 
 export function* loginSuccessSaga(actions) {
-  console.log(actions);
   yield
 }
 

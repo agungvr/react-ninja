@@ -1,18 +1,12 @@
-import { compose } from 'recompose';
-import { withMaybe, withEither } from "../../app/hocs/renderingHandler";
+import React, { Fragment, lazy } from 'react';
 
-import { IsEmpty } from '../../components/IsEmpty';
-import { IsLoading } from '../../components/IsLoading';
-import { ListProduct } from './components/ListProduct';
+const ListProduct = lazy(() => import('./components/ListProduct'));
+const Container = props => {
+  return (
+    <Fragment>
+      <ListProduct {...props}/>
+    </Fragment>
+  )
+};
 
-const isLoadingCondition = props => props.isLoading;
-const nullCondition = props => !props.product;
-const isEmptyCondition = props => !props.product.paragraphs.length;
-
-const enhance = compose(
-  withEither(isLoadingCondition, IsLoading),
-  withMaybe(nullCondition),
-  withEither(isEmptyCondition, IsEmpty)
-);
-
-export const Container = enhance(ListProduct);
+export default Container;
