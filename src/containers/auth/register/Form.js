@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { compose, withHandlers } from 'recompose'
 import { Link } from 'react-router-dom'
 import { Field, reduxForm } from 'redux-form'
-import { withFirebase } from "../../../components/Firebase";
+import { withFirebase } from "../../../components/firebase";
 
 const createReduxForm = reduxForm({ form: 'register' });
 

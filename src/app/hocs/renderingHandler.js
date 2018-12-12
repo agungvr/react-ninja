@@ -1,7 +1,7 @@
 import React from 'react';
 import { compose } from 'recompose'
-import { IsEmpty } from '../../components/IsEmpty';
-import { IsLoading } from '../../components/IsLoading';
+import { IsEmpty } from '../../components/isEmpty';
+import { IsLoading } from '../../components/isLoading';
 
 export const withMaybe = (conditionalRendering) => Component => props =>
   conditionalRendering(props)

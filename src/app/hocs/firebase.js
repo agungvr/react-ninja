@@ -1,4 +1,4 @@
-import Firebase, { FirebaseContext } from '../../components/Firebase';
+import Firebase, { FirebaseContext } from '../../components/firebase';
 
 import { hocCreator } from '../helpers';
 

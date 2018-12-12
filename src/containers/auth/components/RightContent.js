@@ -7,7 +7,7 @@ const RightContent = props => {
         <div className="logo-centered d-flex justify-content-center align-items-center flex-column mb-5"
              style={{ width: 250 }}>
           <img src={"assets/img/logo-ninja.png"} alt="logo" className="no-margin-bottom"/>
-          <h1>React Ninja<span style={{ color: 'rgb(30, 134, 204)' }}>!</span></h1>
+          <h1>React Ninja<span className="text-logo">!</span></h1>
         </div>
         {props.children}
       </div>

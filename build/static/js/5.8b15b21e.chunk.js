@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{115:function(n,e,t){"use strict";t.r(e);var i=t(1),o=t.n(i);e.default=function(){return o.a.createElement("div",null,"Login")}}}]);

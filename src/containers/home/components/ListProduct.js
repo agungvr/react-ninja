@@ -1,8 +1,8 @@
 import React from "react";
 import { compose } from "recompose";
 import { withEither, withMaybe } from "../../../app/hocs/renderingHandler";
-import { IsLoading } from "../../../components/IsLoading";
-import { IsEmpty } from "../../../components/IsEmpty";
+import { IsLoading } from "../../../components/isLoading";
+import { IsEmpty } from "../../../components/isEmpty";
 
 
 const enhance = compose(
