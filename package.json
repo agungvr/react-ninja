@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "firebase": "^5.7.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-error-boundaries": "^1.1.4",
@@ -15,6 +16,7 @@
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7",
+    "redux-form": "^8.0.1",
     "redux-persist": "^5.10.0",
     "redux-saga": "^0.16.2"
   },
